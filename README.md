@@ -1,10 +1,6 @@
 # Algorithm-Visualizer-App
 Dive into algorithms with my Android app! 🚀 Developed in Java using Android Studio, this interactive tool visualizes searching and sorting algorithms. Customize input data for personalized learning, accompanied by detailed explanations and visuals. Elevate your understanding through dynamic and engaging visualizations!
 
-# Algorithm Visualizer App
-
-Welcome to the Algorithm Visualizer App repository! 🚀 This Android app, developed in Java using Android Studio, offers an interactive platform to visualize various searching and sorting algorithms.
-
 ## Features
 
 - **Interactive Visualization:** Witness algorithms come to life through engaging animations.
