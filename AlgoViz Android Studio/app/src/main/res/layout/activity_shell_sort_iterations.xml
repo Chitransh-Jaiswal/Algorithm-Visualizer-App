@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout android:orientation="vertical" android:background="@drawable/thumbnail_1" tools:context=".shell_sort.ShellSortIterations" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="40dp" android:textColor="@color/white" android:fontFamily="@font/concert_one" android:text="Iteration no i" android:layout_marginTop="30dp" android:layout_gravity="center" android:id="@+id/heading_shell_sort_iteration"/>
+
+
+    <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="16dp" android:textColor="@color/white" android:fontFamily="@font/concert_one" android:text="prev" android:textStyle="bold" android:onClick="prevClicked" android:backgroundTint="#8194C4" android:layout_marginRight="10dp" android:layout_marginLeft="50dp"> </Button>
+
+        <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="16dp" android:textColor="@color/white" android:fontFamily="@font/concert_one" android:text="NEXT" android:textStyle="bold" android:onClick="nextClicked" android:backgroundTint="#8194C4" android:layout_marginRight="10dp" android:layout_marginLeft="120dp"> </Button>
+
+    </LinearLayout>
+
+
+    -<ScrollView android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+    -<HorizontalScrollView android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <TableLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="10dp" android:id="@+id/store"> </TableLayout>
+
+</HorizontalScrollView>
+
+</ScrollView>
+
+</LinearLayout>

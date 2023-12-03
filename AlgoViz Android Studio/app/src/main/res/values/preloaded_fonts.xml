@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aladin</item>
+        <item>@font/arsenal_italic</item>
+        <item>@font/autour_one</item>
+        <item>@font/bitter</item>
+        <item>@font/bungee_inline</item>
+        <item>@font/concert_one</item>
+        <item>@font/domine</item>
+        <item>@font/droid_sans_mono</item>
+    </array>
+</resources>

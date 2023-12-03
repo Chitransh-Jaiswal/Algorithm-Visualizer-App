@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".merge_sort.MergeSortPage"
+    android:background="@drawable/thumbnail_1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="25dp"
+        android:paddingHorizontal="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bungee_inline"
+                android:text="Merge  Sort"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bitter"
+                android:text="The Merge Sort algorithm is a sorting algorithm that is based on the Divide and Conquer paradigm. In this algorithm, the array is initially divided into two equal halves and then they are combined in a sorted manner.
+"
+                android:textColor="@color/black"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:fontFamily="@font/concert_one"
+                android:text="Time Complexity: O(N log(N)) \n
+Auxiliary Space: O(N)
+"
+                android:textStyle="bold|italic"
+                android:textColor="@color/black"
+                android:textSize="16dp"></TextView>
+
+            <Button
+                android:layout_width="161dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="20dp"
+                android:text="VISUALISE"
+                android:onClick="onVisualiseClick"
+                android:fontFamily="@font/concert_one"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:backgroundTint="#8194C4"
+                android:textColor="@color/white"></Button>
+
+            <GridLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:rowCount="1"
+                android:padding="5dp"
+                android:alignmentMode="alignBounds"
+                >
+
+                <Button
+                    android:id="@+id/btn1_merge_sort"
+                    android:backgroundTint="#1C9F8F"
+                    android:text="C"
+                    android:onClick="onButtonClick"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"></Button>
+
+                <Button
+                    android:id="@+id/btn2_merge_sort"
+                    android:backgroundTint="#1C9F8F"
+                    android:text="C++"
+                    android:onClick="onButtonClick"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"></Button>
+
+                <Button
+                    android:id="@+id/btn3_merge_sort"
+                    android:backgroundTint="#1C9F8F"
+                    android:text="Java"
+                    android:onClick="onButtonClick"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"></Button>
+
+                <Button
+                    android:id="@+id/btn4_merge_sort"
+                    android:backgroundTint="#1C9F8F"
+                    android:text="Python"
+                    android:onClick="onButtonClick"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"></Button>
+            </GridLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#D9D9D9">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/code_area_merge_sort"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/droid_sans_mono"
+                            android:text="Code will come here."
+                            android:textColor="@color/black"></TextView>
+                    </HorizontalScrollView>
+                </ScrollView>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quick_sort.QuickSortVisualise"
+    android:background="@drawable/thumbnail_1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            android:paddingVertical="25dp"
+            android:paddingHorizontal="25dp">
+
+            <TextView
+                android:id="@+id/heading_quick_sort_visualise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:elevation="10dp"
+                android:fontFamily="@font/bungee_inline"
+                android:gravity="center"
+                android:text="Quick Sort Example"
+                android:textColor="@color/white"
+                android:textSize="36dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sizeHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:fontFamily="@font/concert_one"
+                    android:text="Example Array : {10,80,30,90,40,50,70}"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="QuickSort is a Divide and Conquer algorithm. It picks an element as a pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways.
+
+\n\n\t\tAlways pick the first element as a pivot.
+\n\t\tAlways pick the last element as a pivot \n\t\t(implemented below)
+\n\n\t\tPick a random element as a pivot.
+\n\t\tPick median as the pivot.
+\n\nThe key process in quickSort is a partition(). The target of partitions is, given an array and an element x of an array as the pivot, put x at its correct position in a sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time."
+                android:textColor="@color/black"
+                android:textStyle="italic"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"/>
+
+            <TableLayout
+                android:id="@+id/store_bubble_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+
+                android:src="@drawable/a" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:text="\n\nPartition Algorithm
+
+There can be many ways to do partition, following pseudo-code adopts the method given in the CLRS book. The logic is simple, we start from the leftmost element and keep track of the index of smaller (or equal to) elements as i. While traversing, if we find a smaller element, we swap the current element with arr[i]. Otherwise, we ignore the current element. " />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:text="\nIllustration of partition() :
+
+Consider: arr[] = {10, 80, 30, 90, 40, 50, 70}
+
+Indexes:  0   1   2   3   4   5   6
+low = 0, high =  6, pivot = arr[h] = 70
+Initialize index of smaller element, i = -1" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@drawable/b" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:text="\n\n\tTraverse elements from j = low to high-1\n\t
+j = 0: \n\tSince pivot >= arr[j] \n\tdo i++ and swap(arr[i], arr[j])\n\t
+i = 0\n\t
+arr[] = {10, 80, 30, 90, 40, 50, 70} \n\t// No change as i and j are same\n\t
+j = 1: Since arr[j] > pivot, do nothing" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/c" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:text="\n\n\tj = 2 :\n\tSince pivot >= arr[j], \n\tdo i++ and swap(arr[i], arr[j])
+\n\ti = 1
+\n\tarr[] = {10, 30, 80, 90, 40, 50, 70}\n\t// We swap 80 and 30 " />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/d" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:text="\n\n\tj = 3 : \n\tSince arr[j] > pivot, do nothing \n\t// No change in i and \n\tarr[]
+j = 4 :\n\tSince pivot >= arr[j], \n\tdo i++ and swap(arr[i], arr[j])
+\n\ti = 2
+\n\tarr[] = {10, 30, 40, 90, 80, 50, 70}\n\t// 80 and 40 Swapped" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/e" />
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:text="\n\n\tj = 5 : \n\tSince pivot >= arr[j], \n\tdo i++ and swap arr[i] with arr[j]
+\n\ti = 3
+\n\tarr[] = {10, 30, 40, 50, 80, 90, 70} \n\t// 90 and 50 Swapped " />
+
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/f" />
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:text="\n\n\tWe come out of loop because j is now equal to\n\thigh-1.
+Finally we place pivot at correct position by\n\tswapping arr[i+1] and arr[high] (or pivot)\n\tarr[] = {10, 30, 40, 50, 70, 90, 80}\n\t// 80 and 70 Swapped " />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/g" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:text="\n\n\tNow 70 is at its correct place. All elements smaller\n\tthan 70 are before it and all elements greater than 70\n\tare after it.
+Since quick sort is a recursive function,\n\twe call the partition function again at left and right\n\tpartitions" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/h" />
+
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:text="\n\n\t Again call function at right part and swap 80 and 90" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/i" />
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

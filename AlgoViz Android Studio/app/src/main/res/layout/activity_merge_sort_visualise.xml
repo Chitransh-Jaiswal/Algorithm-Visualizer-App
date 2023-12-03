@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".merge_sort.MergeSortVisualise"
+    android:background="@drawable/thumbnail_1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="25dp"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/heading_merge_sort_visualise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:gravity="center"
+                    android:text="Merge Sort Visualiser"
+                    android:textColor="@color/white"
+                    android:textSize="36dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sizeHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:fontFamily="@font/concert_one"
+                        android:text="Enter Size : "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"></TextView>
+
+                    <EditText
+                        android:id="@+id/inputSize_merge_sort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/concert_one"
+                        android:hint="Size of the Array"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/arrayHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/concert_one"
+                        android:text="Enter the array : "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"></TextView>
+
+                    <EditText
+                        android:id="@+id/inputArray_merge_sort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/concert_one"
+                        android:hint="Use commas or spaces to seperate"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/GenButton_merge_sort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="#8194C4"
+                        android:fontFamily="@font/concert_one"
+                        android:gravity="center"
+                        android:onClick="onGenArrPressed"
+                        android:text="Generate Array"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:textStyle="bold"></Button>
+
+
+                </LinearLayout>
+
+                <TableLayout
+                    android:id="@+id/store_merge_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"></TableLayout>
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

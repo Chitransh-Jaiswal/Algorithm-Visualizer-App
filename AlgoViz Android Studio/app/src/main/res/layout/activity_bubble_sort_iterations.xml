@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bubble_sort.BubbleSortIterations"
+    android:background="@drawable/thumbnail_1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/heading_bubble_sort_iteration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Iteration no i"
+        android:fontFamily="@font/concert_one"
+        android:textColor="@color/white"
+        android:textSize="40dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#8194C4"
+            android:fontFamily="@font/concert_one"
+            android:onClick="prevClicked"
+            android:text="prev"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold">
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#8194C4"
+            android:fontFamily="@font/concert_one"
+            android:onClick="nextClicked"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold">
+        </Button>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/store"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>

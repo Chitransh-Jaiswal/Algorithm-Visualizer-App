@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2265" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_binary_search_page.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_binary_search_visualise.xml" value="0.2359375" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_bubble_sort_iterations.xml" value="0.264" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_bubble_sort_page.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_bubble_sort_visualise.xml" value="0.264" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_home_page.xml" value="0.264" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_insertion_sort_iterations.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_insertion_sort_page.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_insertion_sort_visualise.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_linear_search_page.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_linear_search_visualise.xml" value="0.2" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_merge_sort_page.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_merge_sort_visualise.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_quick_sort_page.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_quick_sort_visualise.xml" value="0.1" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_radix_sort_iterations.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_radix_sort_page.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_radix_sort_visualise.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_selection_sort_iterations.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_selection_sort_page.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_selection_sort_visualise.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_shell_short_page.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_shell_sort_iterations.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_shell_sort_page.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_shell_sort_visualise.xml" value="0.2359375" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/layout/spinner_list.xml" value="0.25" />
+        <entry key="..\:/workspace/IMAD_java/AlgorithmVisualier/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/thumbnail_1" tools:context=".SelectionSortVisualise" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+        <HorizontalScrollView android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:paddingHorizontal="25dp" android:paddingVertical="25dp" tools:ignore="MissingConstraints" android:orientation="vertical" android:id="@+id/linearLayout1">
+
+                <TextView
+                    android:id="@+id/heading_selection_sort_visualise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:gravity="center"
+                    android:text="Selection Sort Visualiser"
+                    android:textColor="@color/white"
+                    android:textSize="36dp" />
+
+
+                -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sizeHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:fontFamily="@font/concert_one"
+                    android:text="Enter Size : "
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/inputSize_selection_sort" android:textSize="20dp" android:fontFamily="@font/concert_one" android:textColor="@color/white" android:textStyle="bold" android:layout_marginLeft="20dp" android:hint="Size of the Array"/>
+
+            </LinearLayout>
+
+
+                -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal" android:layout_marginBottom="20dp">
+
+                <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/arrayHeading" android:textSize="18dp" android:text="Enter the array : " android:fontFamily="@font/concert_one" android:textColor="@color/black" android:textStyle="bold" android:layout_marginLeft="15dp"/>
+
+                <EditText android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/inputArray_selection_sort" android:textSize="20dp" android:fontFamily="@font/concert_one" android:textColor="@color/white" android:textStyle="bold" android:layout_marginLeft="20dp" android:hint="Use commas or spaces to seperate"/>
+
+            </LinearLayout>
+
+
+                -<LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="horizontal" android:layout_marginBottom="20dp">
+
+                <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/GenButton_selection_sort" android:textSize="16dp" android:text="Generate Array" android:fontFamily="@font/concert_one" android:textColor="@color/white" android:textStyle="bold" android:layout_marginLeft="10dp" android:onClick="onGenArrPressed" android:backgroundTint="#8194C4" android:layout_marginRight="20dp"/>
+
+                <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="16dp" android:text="See Iterations" android:fontFamily="@font/concert_one" android:textColor="@color/white" android:textStyle="bold" android:layout_marginLeft="20dp" android:onClick="seeIterationsPress" android:backgroundTint="#8194C4" android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+
+                <TableLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/store_selection_sort" android:layout_marginTop="10dp"> </TableLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Algorithm Visualier</string>
+
+    <string-array name="searches">
+        <item>              </item>
+        <item>Linear Search</item>
+        <item>Binary Search</item>
+    </string-array>
+
+    <string-array name="sorts">
+        <item>          </item>
+        <item>Bubble Sort</item>
+        <item>Insertion Sort</item>
+        <item>Selection Sort</item>
+        <item>Merge Sort</item>
+        <item>Quick Sort</item>
+        <item>Radix Sort</item>
+        <item>Shell Sort</item>
+    </string-array>
+</resources>

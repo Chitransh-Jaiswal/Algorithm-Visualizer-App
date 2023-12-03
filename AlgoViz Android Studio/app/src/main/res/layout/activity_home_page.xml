@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/thumbnail_1">
+
+        <TextView
+            android:id="@+id/appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:elevation="10dp"
+            android:fontFamily="@font/bungee_inline"
+            android:text="Algorithm \n Visualizer"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView1"
+            android:layout_width="314dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_height="161dp"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appname"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="365dp"
+                android:layout_height="146dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="94dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/searching_logo"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="195dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="141dp"
+                            android:layout_height="wrap_content"
+                            android:elevation="5dp"
+                            android:fontFamily="@font/bungee_inline"
+                            android:text="SEARCHING \n ALGO"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold"></TextView>
+
+                        <Spinner
+                            android:id="@+id/searchSpinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:popupBackground="#0BD7D7"
+                            android:popupElevation="10dp"
+                            style="@style/MaterialAlertDialog.Material3.Title.Icon">
+                        </Spinner>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        android:fontFamily="@font/arsenal_italic"
+
+                        android:text="Search algorithms work to retrieve
+                        information stored within particular
+                         data structure, or calculated in the
+                         search space of a problem domain,
+                         with either discrete or continuous
+                         values."
+                        android:textColor="#4B6163"
+                        android:textSize="12dp"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView2"
+            android:layout_width="314dp"
+            android:layout_height="161dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView1"
+            app:layout_constraintVertical_bias="0.213"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="287dp"
+                android:layout_height="133dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="98dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/sorting_logo"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="195dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="141dp"
+                            android:layout_height="wrap_content"
+                            android:elevation="5dp"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/bungee_inline"
+                            android:text="SORTING \n ALGO"
+                            android:textStyle="bold"></TextView>
+
+                        <Spinner
+                            android:id="@+id/sortSpinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:popupBackground="#0BD7D7"
+                            android:popupElevation="10dp"
+                            style="@style/MaterialAlertDialog.Material3.Title.Icon">
+                        </Spinner>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="86dp"
+                        android:fontFamily="@font/arsenal_italic"
+                        android:text="A Sorting Algorithm is used to rearrange a given array or list of elements according to a comparison operator on the elements.
+                        "
+                        android:textColor="#4B6163"
+                        android:textSize="12dp"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>
+
+
